@@ -8,19 +8,19 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Landing Page - Start Bootstrap Theme</title>
+    <title>Bryn Mawr College Student Government Association</title>
 
-   <!-- Bootstrap Core CSS -->
-<!--    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
-     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <!--    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom Fonts -->
-    
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
-    
+
     <!-- Custom styles for this template -->
     <link href="css/landing-page.min.css" rel="stylesheet">
 
@@ -56,8 +56,7 @@
 </nav>
 -->
 
-
-           <nav class="navbar navbar-light bg-light">
+     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img src="/img/logo.jpg" width="40" height="30" alt="">
         </a>
@@ -70,18 +69,16 @@
                 <a class="nav-link active" href="about.html">About</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link active" href="/pdfs/sgaconstitution.pdf">SGA Constitution</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link active" href="eboard.html">Executive Board</a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Rep Co</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Class Presidents</a>
-                    <a class="dropdown-item" href="#">Members at Large </a>
-                    <a class="dropdown-item" href="#">Dorm Presidents</a>
-                </div>
+             <li class="nav-item">
+                <a class="nav-link active" href="repco.html">Rep Co</a>
             </li>
              <li class="nav-item">
-                <a class="nav-link active" href="commitees_index.html">Committees</a>
+                <a class="nav-link active" href="committees.html">Committees</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link active" href="contact.html">Contact</a>
@@ -93,29 +90,32 @@
 
     <div class="jumbotron text-center">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <h1 style = "color: white;">SGA Committees</h1>
-        <p style = "color: white;">Blurb about comittees here?</p>
+        <h1 style="color: white;">SGA Rep Co</h1>
+        <p style="color: white;">Blurb about comittees here?</p>
     </div>
 
+<!--
     <div class="container">
         <div class="row">
+            <d
+-->
+                <h3 id = "classpresidents" style = "cursor: pointer;" >Class Presidents </h3>
+                <div id = "classpresidentsstuff" >
+                    <p>Class of 2019</p>
+                    <p>Class of 2020</p>
+                    <p>Class of 2021</p>
+                    <p>Class of 2022</p>
+                </div>
 
-            <div class="col-sm-4">
-                <h3>Class Presidents</h3>
-                <p>Class of 2019</p>
-                <p>Class of 2020</p>
-                <p>Class of 2021</p>
-                <p>Class of 2022</p>
-            </div>
-
-            <div class="col-sm-4">
-                <h3>Election Heads</h3>
+                <h3 id = "election" style = "cursor: pointer;" >Election Heads</h3>
+                <div id = "electionstuff">
                 <p>1</p>
                 <p>2</p>
-            </div>
+                </div>
+          
 
-            <div class="col-sm-4">
-                <h3>Members-at-Large</h3>
+                <h3 id = "members" style = "cursor: pointer;" >Members-at-Large</h3>
+                <div id = "membersstuff" style = "cursor: pointer;" >
                 <p>1</p>
                 <p>2</p>
                 <p>3</p>
@@ -123,10 +123,11 @@
                 <p>5</p>
                 <p>6</p>
                 <p>7</p>
-            </div>
+                </div>
+            
 
-            <div class="col-sm-4">
-                <h3>Dorm Presidents</h3>
+                <h3 id = "dormpresidents" style = "cursor: pointer;" >Dorm Presidents</h3>
+                <div id = "dormpresidentsstuff">
                 <p>Brecon</p>
                 <p>Denibigh</p>
                 <p>Enid Cook Center</p>
@@ -137,16 +138,23 @@
                 <p>Rhoads South</p>
                 <p>Radnor</p>
                 <p>Rock</p>
+                </div>
+<!--
             </div>
 
         </div>
-    </div>
+-->
 
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+    <script src='js/repco.js'></script>
 
 </body>
 
 </html>
+
+
+
