@@ -11,35 +11,35 @@ var e_list = [
         "name": "Delia Landers",
         "pronouns": "she/her",
         "year": "2019",
-        "image": "img/president.jpg"
+        "image": "img/vicepresident.jpg"
     },
     {
         "position": "Secretary",
         "name": "Shannan Stafford",
         "pronouns": "she/her",
         "year": "2019",
-        "image": "img/president.jpg"
+        "image": "img/secretary.jpg"
     },
     {
         "position": "Treasurer",
         "name": "Morine Kimani",
         "pronouns": "she/her",
         "year": "2020",
-        "image": "img/president.jpg"
+        "image": "img/treasurer.jpg"
     },
     {
         "position": "Head of Honor Board",
         "name": "Sofia Colosimo",
         "pronouns": "she/her",
         "year": "2019",
-        "image": "img/president.jpg"
+        "image": "img/honorboard.jpg"
     },
     {
         "position": "Chair of Social Justice & Equity",
         "name": "Anu Atte",
         "pronouns": "she/her",
         "year": "2019",
-        "image": "img/president.jpg"
+        "image": "img/socialjustice.jpg"
     } 
 ]; 
 
