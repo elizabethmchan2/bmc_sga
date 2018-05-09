@@ -4,42 +4,48 @@ var e_list = [
         "name": "Nanda Bhushan",
         "pronouns": "she/her",
         "year": "2019",
-        "image": "img/president.jpg"
+        "image": "img/president.jpg",
+        "email": "nbhushan@brynmawr.edu"
     },
     {
         "position": "Vice President",
         "name": "Delia Landers",
         "pronouns": "she/her",
         "year": "2019",
-        "image": "img/vicepresident.jpg"
+        "image": "img/vicepresident.jpg",
+        "email": "dlanders@brynmawr.edu"
     },
     {
         "position": "Secretary",
         "name": "Shannan Stafford",
         "pronouns": "she/her",
         "year": "2019",
-        "image": "img/secretary.jpg"
+        "image": "img/secretary.jpg",
+        "email": "systafford@brynmawr.edu"
     },
     {
         "position": "Treasurer",
         "name": "Morine Kimani",
         "pronouns": "she/her",
         "year": "2020",
-        "image": "img/treasurer.jpg"
+        "image": "img/treasurer.jpg",
+        "email": "mkimani@brynmawr.edu"
     },
     {
         "position": "Head of Honor Board",
         "name": "Sofia Colosimo",
         "pronouns": "she/her",
         "year": "2019",
-        "image": "img/honorboard.jpg"
+        "image": "img/honorboard.jpg",
+        "email": "scolosimo@brynmawr.edu"
     },
     {
         "position": "Chair of Social Justice & Equity",
         "name": "Anu Atte",
         "pronouns": "she/her",
         "year": "2019",
-        "image": "img/socialjustice.jpg"
+        "image": "img/socialjustice.jpg",
+        "email": "aatte@brynmawr.edu"
     }
 ];
 
@@ -113,6 +119,12 @@ for (var i = 0; i < e_list.length; i += 1) {
     p_year.classList = "font-weight_light mb-0";
     p_year.appendChild(p_year_text);
     col_sm_2.appendChild(p_year);
+    
+    var p_email = document.createElement("p");
+    var p_email_text = document.createTextNode("Email: " + e_list[i]["email"]);
+    p_email.classList = "font-weight_light mb-0";
+    p_email.appendChild(p_email_text);
+    col_sm_2.appendChild(p_email);
 
     if (i % 2 != 0) {
         var border_div2 = document.createElement("div");
