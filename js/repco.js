@@ -32,6 +32,12 @@ var membersstuff = document.getElementById("membersstuff")
 var dormpresidents = document.getElementById("dormpresidents")
 var dormpresidentsstuff = document.getElementById("dormpresidentsstuff")
 
+var songmistress = document.getElementById("songmistress")
+var songmistressstuff = document.getElementById("songmistressstuff")
+
+var other = document.getElementById("other")
+var otherstuff = document.getElementById("otherstuff")
+
 
 var classReset = 0;
 
@@ -81,5 +87,31 @@ dormpresidents.addEventListener('click', function() {
     } else {
         dormpresidentsstuff.style.display = "none";
         dormReset = 0;
+    }
+});
+
+
+var songReset = 0;
+songmistress.addEventListener('click', function() {
+    if (songReset == 0) { //not yet clicked
+        songmistressstuff.style.display = "block";
+        songReset = 1;
+//
+    } else {
+        songmistressstuff.style.display = "none";
+        songReset = 0;
+    }
+});
+
+
+var otherReset = 0;
+other.addEventListener('click', function() {
+    if (otherReset == 0) { //not yet clicked
+        otherstuff.style.display = "block";
+        otherReset = 1;
+//
+    } else {
+        otherstuff.style.display = "none";
+        otherReset = 0;
     }
 });

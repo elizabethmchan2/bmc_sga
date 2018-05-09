@@ -3,7 +3,7 @@ var e_list = [
         "position": "President",
         "name": "Nanda Bhushan",
         "pronouns": "she/her",
-        "year": "2019", 
+        "year": "2019",
         "image": "img/president.jpg"
     },
     {
@@ -40,14 +40,23 @@ var e_list = [
         "pronouns": "she/her",
         "year": "2019",
         "image": "img/socialjustice.jpg"
-    } 
-]; 
+    }
+];
 
 
 var eboard = document.getElementById("eboard");
-for(var i = 0; i < e_list.length; i+=1) {
+for (var i = 0; i < e_list.length; i += 1) {
+    if (i % 2 == 0) {
+        var border_div = document.createElement("div");
+        border_div.className = "col-sm-1";
+        eboard.appendChild(border_div);
+    }
+
+
+
+
     var col = document.createElement("div");
-    col.className = "col-sm-6";
+    col.className = "col-sm-5";
     eboard.appendChild(col);
 
     var card = document.createElement("div");
@@ -55,57 +64,63 @@ for(var i = 0; i < e_list.length; i+=1) {
     card.style.border = "0";
     col.appendChild(card);
 
-    
+
     var card_body = document.createElement("div");
-    card_body.className = "card-body mx-5"; 
+    card_body.className = "card-body mx-5";
     card.appendChild(card_body);
-    
+
     var container = document.createElement("div");
     container.className = "container";
     card_body.appendChild(container);
-    
+
     var row = document.createElement("div");
     row.className = "row";
     container.appendChild(row);
-    
+
     var col_sm_1 = document.createElement("div");
     col_sm_1.className = "col-sm";
     row.appendChild(col_sm_1);
-    
+
     var img = document.createElement("img");
     img.className = "img-fluid square mb-3";
     img.src = e_list[i]["image"];
     col_sm_1.append(img);
-    
+
     var col_sm_2 = document.createElement("div");
     col_sm_2.className = "col-sm";
     row.appendChild(col_sm_2);
-    
+
     var h5 = document.createElement("h5");
     var h5_text = document.createTextNode(e_list[i]["position"]);
     h5.className = "card-title";
     h5.appendChild(h5_text);
     col_sm_2.appendChild(h5);
-    
+
     var p_name = document.createElement("p");
     var p_name_text = document.createTextNode("Name: " + e_list[i]["name"]);
     p_name.classList = "font-weight_light mb-0";
     p_name.appendChild(p_name_text);
     col_sm_2.appendChild(p_name);
-    
+
     var p_pronouns = document.createElement("p");
     var p_pronouns_text = document.createTextNode("Pronouns: " + e_list[i]["pronouns"]);
     p_pronouns.classList = "font-weight_light mb-0";
     p_pronouns.appendChild(p_pronouns_text);
     col_sm_2.appendChild(p_pronouns);
-    
+
     var p_year = document.createElement("p");
     var p_year_text = document.createTextNode("Year: " + e_list[i]["year"]);
     p_year.classList = "font-weight_light mb-0";
     p_year.appendChild(p_year_text);
     col_sm_2.appendChild(p_year);
-    
-    
+
+    if (i % 2 != 0) {
+        var border_div2 = document.createElement("div");
+        border_div2.className = "col-sm-1";
+        eboard.appendChild(border_div2);
+    }
+
+
 }
 
 //<div class="card" style="width: 18rem;">
@@ -116,7 +131,7 @@ for(var i = 0; i < e_list.length; i+=1) {
 //    <a href="#" class="btn btn-primary">Go somewhere</a>
 //  </div>
 //</div>
-
+//
 //<div class="col-sm-6">
 //            <div class="card" style="border:0">
 //                <div class="card-body">

@@ -10,19 +10,20 @@
 
     <title>Landing Page - Start Bootstrap Theme</title>
 
-     <!-- Bootstrap Core CSS -->
-<!--    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
-     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <!--    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom Fonts -->
-    
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
-    
+
     <!-- Custom styles for this template -->
     <link href="css/landing-page.min.css" rel="stylesheet">
+    <link href="css/extra.css" rel="stylesheet">
 
 </head>
 
@@ -30,15 +31,15 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a href="index.html" class="navbar-left"><img src="img/bmclogo.jpg" style = "width: 60%;"></a>
-        
+        <a href="index.html" class="navbar-left"><img src="img/bmclogo.jpg" id = "navbar_logo"></a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-        <div class="collapse navbar-collapse" id="navbarNav" style = "padding-left: 270px;">
+        <div class="collapse navbar-collapse" id="navbar_edit">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="about.html">About</a>
@@ -47,7 +48,7 @@
                     <a class="nav-link " href="constitution.html">SGA Constitution</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="eboard.html">Executive Board</a>
+                    <a class="nav-link active" href="eboard.html">Executive Board</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="repco.html">Rep Co</a>
@@ -67,18 +68,71 @@
 
 
     <!-- Testimonials -->
-    <h2 style="padding-top: 50px; padding-left: 50px">18' - 19' Executive Board</h2> 
-<!--    //center it-->
-    <div class="row" id = "eboard">
+    <h2 id = "eboard_heading">2018 - 2019 Executive Board</h2>
+    <!--    //center it-->
+    <div class="row" id="eboard">
+        <!--
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+-->
+        <!--        </div>-->
+<!--
+        <div class="col-sm-1"></div>
+        <div class="col-sm-5">
+            <div class="card" style="border:0">
+                <div class="card-body mx-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm">
+                                <img class="img-fluid square mb-3" src="img/president.jpg" alt="">
+                            </div>
+                            <div class="col-sm">
+                                <h5>Position: President</h5>
+                                <p class="font-weight-light mb-0">Name: Nanda Bhushan</p>
+                                <p class="font-weight-light mb-0">Pronouns: she/her</p>
+                                <p class="font-weight-light mb-0">Year: 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-5">
+            <div class="card" style="border:0">
+                <div class="card-body mx-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm">
+                                <img class="img-fluid square mb-3" src="img/president.jpg" alt="" style = "width:125%">
+                            </div>
+                            <div class="col-sm">
+                                <h5>Position: President</h5>
+                                <p class="font-weight-light mb-0">Name: Nanda Bhushan</p>
+                                <p class="font-weight-light mb-0">Pronouns: she/her</p>
+                                <p class="font-weight-light mb-0">Year: 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+-->
     </div>
 
 
 
 
+
     <!-- Footer -->
-     <footer class="footer bg-light">
+    <footer class="footer bg-light">
         <div class="container">
-            <div class="row">
+            <div class="row ">
                 <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
                     <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2018. All Rights Reserved.</p>
                 </div>
@@ -108,8 +162,8 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    
-<!--    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>-->
+
+    <!--    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>-->
     <script src='js/eboard.js'></script>
 
 
