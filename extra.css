@@ -5,7 +5,7 @@
 }
 
 #navbar_edit {
-    padding-left: 40%;
+    padding-left: 300px;
 }
 
 /*end of navbar*/
@@ -63,14 +63,26 @@ input[type=submit]:hover {
 
 /*committees*/
 
-#committees {
-    text-align: center;
+#committees > .row > .col-md-6 {
+    text-align: left;
+    padding-left: 20px
+}
+
+#committees_a {
+    margin-left: 200px;
+    outline: 2px black solid; 
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 
 #committees_p {
-    text-align: center;
+    text-align: left;
 }
+
+
 
 /*end of committees*/
 
@@ -113,7 +125,7 @@ input[type=submit]:hover {
 
 /*Constitution*/
 
-#link_buttons > div > button, input {
+#link_buttons > div > button {
     cursor: pointer;
     background-color: #ffe715;
     border: none;
