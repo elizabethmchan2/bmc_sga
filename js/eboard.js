@@ -52,17 +52,17 @@ var e_list = [
 
 var eboard = document.getElementById("eboard");
 for (var i = 0; i < e_list.length; i += 1) {
-    if (i % 2 == 0) {
-        var border_div = document.createElement("div");
-        border_div.className = "col-sm-1";
-        eboard.appendChild(border_div);
-    }
+//    if (i % 2 == 0) {
+//        var border_div = document.createElement("div");
+//        border_div.className = "col-sm-1";
+//        eboard.appendChild(border_div);
+//    }
 
 
 
 
     var col = document.createElement("div");
-    col.className = "col-sm-5";
+    col.className = "col-sm-6";
     eboard.appendChild(col);
 
     var card = document.createElement("div");
@@ -126,11 +126,12 @@ for (var i = 0; i < e_list.length; i += 1) {
     p_email.appendChild(p_email_text);
     col_sm_2.appendChild(p_email);
 
-    if (i % 2 != 0) {
-        var border_div2 = document.createElement("div");
-        border_div2.className = "col-sm-1";
-        eboard.appendChild(border_div2);
-    }
+//    if (i % 2 != 0) {
+//        var border_div2 = document.createElement("div");
+//        border_div2.className = "col-sm-1";
+//        eboard.appendChild(border_div2);
+//    }
+    
 
 
 }
