@@ -113,7 +113,7 @@ input[type=submit]:hover {
 
 /*Constitution*/
 
-#link_buttons > div > button {
+#link_buttons > div > button, input {
     cursor: pointer;
     background-color: #ffe715;
     border: none;
