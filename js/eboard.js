@@ -90,6 +90,29 @@ for (var i = 0; i < e_list.length; i += 1) {
     var img = document.createElement("img");
     img.className = "img-fluid square mb-3";
     img.src = e_list[i]["image"];
+    switch(i) {
+        case 0: 
+            img.alt = "image of president Nanda Bhushan";
+            break;
+        case 1: 
+            img.alt = "image of vice president Delia Landers";
+            break;
+         case 2: 
+            img.alt = "image of secretary Shannan Stafford";
+            break;
+         case 3: 
+            img.alt = "image of treasurer MOrine Kimani";
+            break;
+         case 4: 
+            img.alt = "image of head of honor board Sofia Colosimo Bhushan";
+            break;
+         case 5: 
+            img.alt = "image of chair of social justice and equity Anu Atte";
+            break;
+        default:
+            img.alt = "image of one of the executive board members";
+            break;
+    }
     col_sm_1.append(img);
 
     var col_sm_2 = document.createElement("div");
