@@ -159,6 +159,9 @@ for (var i = 0; i < e_list.length; i += 1) {
 
 }
 
+
+
+//pleasework
 //<div class="card" style="width: 18rem;">
 //  <img class="card-img-top" src="..." alt="Card image cap">
 //  <div class="card-body">
