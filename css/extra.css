@@ -126,6 +126,13 @@
     height: 200px;
     width: 200px;
     font-size: 16px;
+    transition: transform 1.4s linear;
+
+
+}
+
+#link_buttons > div > button:hover {
+    transform: scale(1.1);
 
 }
 
