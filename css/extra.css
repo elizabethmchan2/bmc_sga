@@ -9,9 +9,24 @@
 }
 
 .nav-link.active {
-    color: #1784FD !important;
+    color: #03335F !important;
 }
 /*end of navbar*/
+
+
+/*footers*/
+
+#footer_icons > div > ul > li{ 
+    transition: transform 1.4s linear;
+}
+
+
+#footer_icons > div > ul > li:hover { 
+    transform: scale(1.2);
+
+}
+
+/*end of footers*/
 
 /*jumbotron */
 
